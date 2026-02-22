@@ -17,9 +17,11 @@ These articles are organized into thematic chapters and individual lessons. Most
 
 The focus here is on local generation using open source tools. Many of the concepts and techniques should be applicable to proprietary software and services, especially chapter 1, but such tools generally do not give sufficient control to make full use of the techniques described in this course.
 
+In terms of software the course will focus on ComfyUI and Forge/reForge, but other fully featured local generation tools should be able to do the same techniques.
+
 The course (written in 2026) is designed to be moderately future proof and should be largely applicable to any future models that use the diffusion paradigm. Illustrious and Z-Image are used for the examples and some additional content specific to these models will be included.
 * Illustrious is, as of writing in Feb 2026, the best model for anime or cartoon generation due mostly to broad community support (though also thanks to some excellent decisions by the Illustrious team during training, most notably the use of higher 1536x1536 resolution for Illustrious v1.0).
-    * NoobAI eps is highly compatible with Illustrious so the use of these models should be essentially identical. NoobAI vpred is incompatible but is still similar as long as the NoobAI vpred resources
+    * NoobAI eps is highly compatible with Illustrious so the use of these models should be essentially identical. NoobAI vpred is incompatible but is still similar as long as the NoobAI vpred resources are used instead.
     * Note that Illustrious v2.0 and later are largely incompatible with v0.1, v1.0, and v1.1. The community settled on the earlier models, so that's what I'll be using. You should also avoid v0.1 whenever possible due to its poor performance at higher resolutions.
 * Z-Image has a bright future in this space because it uses more recent architecture and techniques, and is deliberately designed to be accessible to artists and trainers in the local generation space. I expect the number of trained resources to grow dramatically as 2026 progresses.
     * I will generally use Z-Image Base for reasons that will become obvious as you complete the lessons, but Z-Image Turbo is a useful tool and is much faster.
@@ -28,12 +30,15 @@ The course (written in 2026) is designed to be moderately future proof and shoul
 
 ## Requirements
 * You need hardware to generate locally, or to use a cloud GPU renting service that can run the same software as local generation.
-* You will need to set up at least one of [forge](https://github.com/lllyasviel/stable-diffusion-webui-forge), [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge), or [ComfyUI](https://github.com/Comfy-Org/ComfyUI). I recommend [Stability Matrix](https://lykos.ai/) for a non-technical turn-key solution.
-    * If you are more technical-minded I would recommend setting these tools up manually instead
+    * As mentioned earlier, you may be able to adapt the course to a proprietary service but will probably not be able to use several key techniques
+* You will need to set up at least one of [forge](https://github.com/lllyasviel/stable-diffusion-webui-forge), [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge), or [ComfyUI](https://github.com/Comfy-Org/ComfyUI). I recommend [Stability Matrix](https://lykos.ai/) for a non-technical turn-key solution. In particular, Stability Matrix makes it easy to install all of these on the same machine.
+    * If you are more technical-minded I would recommend setting these tools up manually instead. You can use soft links to make your models available under multiple systems.
     * You may use an alternative tool, but will need to adapt the lessons to your tool
     * The lessons will include examples and workflows for both reForge and ComfyUI
 * You will need child-level drawing skills
+    * Additional art skills are beneficial
 * You will need basic image editing skills like selecting regions in an image and copy-pasting image content
     * I recommend and will be using [Krita](https://krita.org/en/). Remember that you can use Krita in addition to other image editing tools, though most fully featured image editors should have everything needed.
     * I won't cover basic usage of Krita as their [extensive docs](https://docs.krita.org/en/) already cover this.
-    * In some cases I will provide an [ImageMagick](https://imagemagick.org/) command line solution in addition to the manual Krita approach. This is simply a convenience for advanced users.
+    * I generally won't use the excellent [Krita AI Diffusion Plugin](https://www.interstice.cloud/) because the emphasis of the course is applying the techniques more directly. I highly recommend the plugin however, and it also contains an alternative option to install a managed ComfyUI instance.
+    * In some cases I will provide an [ImageMagick](https://imagemagick.org/) command line solution in addition to the manual Krita approach. This is simply a convenience for advanced users and ImageMagick is not needed.
