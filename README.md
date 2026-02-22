@@ -42,3 +42,5 @@ The course (written in 2026) is designed to be moderately future proof and shoul
     * I won't cover basic usage of Krita as their [extensive docs](https://docs.krita.org/en/) already cover this.
     * I generally won't use the excellent [Krita AI Diffusion Plugin](https://www.interstice.cloud/) because the emphasis of the course is applying the techniques more directly. I highly recommend the plugin however, and it also contains an alternative option to install a managed ComfyUI instance.
     * In some cases I will provide an [ImageMagick](https://imagemagick.org/) command line solution in addition to the manual Krita approach. This is simply a convenience for advanced users and ImageMagick is not needed.
+## Get Started
+Now that you've read the course introduction, go ahead and jump into the [first lesson](chapter-1/lesson-1/README.md)!
